@@ -1,4 +1,4 @@
-// script.js o dentro de un <script> al final del body
+// script.js 
 document.addEventListener('DOMContentLoaded', () => {
     const primaryButton = document.querySelector('.btn-primary');
 
