@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Componentes UI</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-code.js" crossorigin="anonymous"></script>
+
+    </head>
+<body>
+
+    <h1>Mi Biblioteca de Componentes UI</h1>
+
+    <nav class="navbar">
+        <a href="logo.jpg" class="navbar-logo">MiLogo</a>
+        <ul class="navbar-links">
+            <li><a href="#" class="nav-link active">Inicio</a></li>
+            <li><a href="#" class="nav-link">Productos</a></li>
+            <li><a href="#" class="nav-link">Sobre Nosotros</a></li>
+            <li><a href="#" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="navbar-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+ <main>
+        <section>
+            <h2>1. Botones</h2>
+            <div class="component-grid">
+                <button class="btn btn-primary">Botón Primario</button>
+                <button class="btn btn-secondary">Botón Secundario</button>
+                <button class="btn btn-text">Botón de Texto</button>
+                <button class="btn btn-primary" disabled>Primario Deshabilitado</button>
+                <button class="btn btn-secondary" disabled>Secundario Deshabilitado</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Tarjetas de Contenido</h2>
+            <div class="card">
+                <div class="card-img-top"></div>
+                <div class="card-body">
+                    <h3 class="card-title">Título de la Tarjeta</h3>
+                    <p class="card-text">Esta es una breve descripción del contenido de la tarjeta. Sera util para mostrar productos, artículos o perfiles.</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Ver Más</button>
+                </div>
+                 </div>
+        </section>
+ <section>
+            <h2>3. Campos de Formulario</h2>
+            <form class="form-container">
+                <div class="form-group">
+                    <label for="name">Nombre (Válido)</label>
+                    <input type="text" id="name" class="form-input" value="Jorge Mendoza" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email (Inválido)</label>
+                    <input type="email" id="email" class="form-input" value="correo-utm" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">País</label>
+                    <select id="country" class="form-select">
+                        <option>Ecuador</option>
+                        <option>Colombia</option>
+                        <option>Perú</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" class="form-checkbox" checked>
+                        Acepto los términos y condiciones
+                    </label>
+                </div>
+                 <div class="form-group">
+                    <label>
+                        <input type="radio" name="plan" class="form-radio" checked>
+                        Plan Básico
+                    </label>
+                     <label>
+                        <input type="radio" name="plan" class="form-radio">
+                        Plan Premium
+                    </label>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2>5. Modal</h2>
+            <button class="btn btn-primary" id="open-modal-btn">Abrir Modal</button>
+            <div class="modal-overlay" id="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Título del Modal</h3>
+                        <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Este es el contenido principal del modal. Aquí podemos colocar formularios, mensajes importantes o cualquier otro tipo de información.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary">Cancelar</button>
+                        <button class="btn btn-primary">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>6. Alertas y 7. Badges</h2>
+            <div class="component-grid" style="flex-direction: column; align-items: stretch;">
+                <div class="alert alert-success">Mensaje de éxito! Tu solicitud fue completada.</div>
+                <div class="alert alert-error">Error! No se pudo guardar la información.</div>
+                <div class="alert alert-warning">Advertencia: Tu contraseña expirara pronto.</div>
+                <div class="alert alert-info">
+                    Tienes 3 notificaciones sin leer <span class="badge">3</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>8. Acordeón</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Sección 1</button>
+                    <div class="accordion-content">
+                        <p>Contenido de la primera sección. Aqui podemos incluir texto, imágenes o incluso otros componentes.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Sección 2</button>
+                    <div class="accordion-content">
+                        <p>Contenido de la segunda sección.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>9. Pestañas (Tabs)</h2>
+            <div class="tabs">
+                <ul class="tab-list">
+                    <li class="tab-item active"><button>Pestaña 1</button></li>
+                    <li class="tab-item"><button>Pestaña 2</button></li>
+                    <li class="tab-item"><button>Pestaña 3</button></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-panel active">Contenido del panel 1.</div>
+                    <div class="tab-panel">Contenido del panel 2.</div>
+                    <div class="tab-panel">Contenido del panel 3.</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>10. Tooltip</h2>
+            <p>Pasa el cursor sobre el <strong class="tooltip-container" data-tooltip="Este es un tooltip informativo!">texto resaltado</strong> para ver el efecto.</p>
+        </section>
+        
+    </main>
+</body>
+</html>
